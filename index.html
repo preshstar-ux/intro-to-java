@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loop</title>
+</head>
+<body>
+    <div id="display"></div>
+    <script>
+        let show = document.getElementById('display')
+        // for(starting value; condition; steps/iteration/increment || decrement)
+        for (let i = 1;  i<=100; i++) {
+        console.log(i);
+        // show.innerHTML += '<p>$(i)</p>';
+        if (i%2 == 0) {
+            show.innerHTML += '<p style="color:green">$(i)</p>';
+        }else {
+            show.innerHTML += '<p style="color:red">$(i)</p>';
+        }
+        if (i%3 == 0) {
+            show.innerHTML += '<p style="color:blue">$(i)</p>';
+        }else {
+            show.innerHTML += '<p style="color:black">$(i)</p>';
+        }
+
+        }
+
+
+    </script>
+</body>
+</html>
